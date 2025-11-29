@@ -27,12 +27,12 @@ Termux-Theme/
  │  ├──── theme_bash_bashrc.txt
  │  ├──── theme_bashrc.txt
  │  └──── theme_fish.txt
- ├── theme.txt
- └── theme.py
+ ├── tmx-theme.txt
+ └── tmx-theme.py
 
 ````
 
-- `theme.py` → Main Python script, handles applying/removing theme.
+- `tmx-theme.py` → Main Python script, handles applying/removing theme.
 - `install.sh` → Installs necessary packages (Fish, Ruby, etc.) with progress bar.
 - `theme_bashrc.txt` → Template for `.bashrc`.
 - `theme_bash_bashrc.txt` → Template for `bash.bashrc`.
@@ -55,13 +55,13 @@ pip install rich
 ```bash
 pkg install python3 -y
 pkg install git -y
-git clone https://github.com/BLACK-ZER-0/Termux-Theme.git
-cd Termux-Theme
+git clone https://github.com/BLACK-ZER-0/TMX-Theme.git
+cd TMX-Theme
 chmod +x
 chmod 777*
-pip install -r theme.txt
+pip install -r tmx-theme.txt
 bash install.sh
-python3 theme.py
+python3 tmx-theme.py
 ```
 
 
@@ -69,10 +69,10 @@ python3 theme.py
 
 ## Usage
 
-1. Run `theme.py`:
+1. Run `tmx-theme.py`:
 
 ```bash
-python3 theme.py
+python3 tmx-theme.py
 ```
 
 2. Select an option:
