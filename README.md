@@ -20,13 +20,14 @@ This is a Termux tool to automatically set up a custom terminal theme with Fish 
 
 ```
 
-theme-setup/
+Termux-Theme/
  ├──    install.sh
  | └── theme/
- | ├──── packages.txt
- │ ├──── theme_bash_bashrc.txt
- │ ├──── theme_bashrc.txt
- │ └──── theme_fish.txt    
+ |  ├──── packages.txt
+ │  ├──── theme_bash_bashrc.txt
+ │  ├──── theme_bashrc.txt
+ │  └──── theme_fish.txt
+ ├── theme.txt
  └── theme.py
 
 ````
@@ -52,10 +53,13 @@ pip install rich
 2. Clone or download this repository into Termux:
 
 ```bash
+pkg install python3 -y
+pkg install git -y
 git clone https://github.com/BLACK-ZER-0/Termux-Theme.git
 cd Termux-Theme
 chmod +x
 chmod 777*
+pip install -r theme.txt
 bash install.sh
 python3 theme.py
 ```
